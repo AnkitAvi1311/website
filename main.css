@@ -1,0 +1,617 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4{
+    font-family: arial;
+    margin: 0; 
+}
+.wrapper{
+    margin: 0 auto;
+    background: dodgerblue;
+    padding: 0px 80px;
+    box-shadow: 0px 2px 20px black;
+}
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.logo > img{
+    height: 70px;
+    float: left;
+    padding: 10px;
+}
+
+/* Main Navigation bar styling starts here */
+nav ul{
+    float: right;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;;
+    padding: 0;
+    list-style-type: none;
+}
+nav ul li{
+    float: left;
+}
+nav ul li > a{
+    color: white;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    display: block;
+    padding: 22px 15px;
+    transition: color .5s, border-bottom-color .5s;
+}
+nav ul li > a:hover, .drop-down:hover > a{
+    color: lightgrey;
+    border-bottom-color: red;
+}
+/* styles for the dropdown of the main navigation bar */
+.drop-down{
+    display: inline-block;
+    position: relative;
+}
+.drop-down:hover .down-content{
+    display: block;
+}
+.down-content{
+    z-index: 100;
+    display: none;
+    position: absolute;
+    background: white;
+    margin-top: 0px;
+    right: 0;
+    width: 200%;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 6px;
+    animation: fadeanim .7s ease-in-out forwards;
+}
+@keyframes fadeanim{
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.show-down{
+    display: block;
+}
+.down-content::before{
+    content: "";
+    border: 10px solid white;
+    position: absolute;
+    bottom: 100%;
+    left: 70%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.down-content a:first-child{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.down-content a:last-child{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.down-content a{
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: color .5s ease-in-out, background .5s ease-in-out;
+    color: black;
+}
+.down-content a:hover{
+    color: white;
+    background: blue;
+}
+
+/* Navigation bar for mobile and tablets */
+.ham{
+    display: none;
+}
+.ham .fa{
+    font-size: 26px;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: color .2s linear;
+}
+.ham .fa:hover{
+    color: lightgrey;
+}
+.ham-content{
+    background: linear-gradient(330deg,grey,black);
+    background-size: cover;
+    background-position: center;
+    font-size: 25px;
+    height: 100%;
+    font-family: 'Dosis', sans-serif;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    transition: width .4s linear;
+    z-index: 1000;
+}
+.logo2 img{
+    height: 55px;
+    padding: 10px;
+}
+.close::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.ham-content div{
+    padding: 5px;
+}
+.close   > .fa{
+    cursor: pointer;
+    color: white;
+    font-size: 26px;
+    float: right;
+    transition: color .2s linear;
+}
+.close>.fa:hover{
+    color: red;
+}
+.profile{
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.profile img{
+    width: 50%;
+    height: 50%;
+}
+
+.profile ul{
+    padding: 0;
+    font-size: 18px;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+}
+#cat div{
+    padding: 0px 5px;
+}
+#cat a{
+    padding: 10px 5px;
+    text-decoration: none;
+    color: lightgrey;
+}
+.menu-content ul{
+    margin-top: 10px;
+}
+.menu-content ul li{
+    margin-top: 5px;
+    background: rgba(218, 218, 218, .2)
+}
+.menu-content ul li a{
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+}
+.profile ul li .fa{
+    margin-right: 10px;
+}
+#drop{
+    cursor: pointer;
+}
+#cat{
+    background: rgba(218,218,218,.3);
+    display: none;
+    color: lightgrey;
+    transition: display .3s linear;
+}
+#cat a{
+    display: block;
+}
+.show-cat+#cat{
+    display: block;
+}
+#cat .fa{
+    margin-right: 5px;
+}
+
+/* for the banner of the web page  */
+.banner{
+    content: "";
+    min-height: 592px;
+    width: 100%;
+    background: url("https://github.com/AnkitAvi1311/website/blob/master/background.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-content{
+    z-index: 1;
+    padding: 10px 80px;
+    color: white;
+    font-family: dosis;
+    font-size: 20px;
+    font-weight: normal;
+}
+.banner-content h1{
+    font-family: dosis;
+    margin: 0;
+    font-weight: normal;
+    font-size: 5pc;
+}
+.banner-content .row{
+    margin-top: 100px;
+}
+.brief{
+    font-size: 25px;
+    text-align: justify;
+}
+.hack-image img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.btn2{
+    display: none;
+}
+.btn1{
+    margin-top: 45px;
+}
+.btn{
+    background: dodgerblue;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-family: dosis;
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    transition: background .5s linear, color .5s linear,transform .1s linear,box-shadow .1s linear;
+    box-shadow: 2px 2px 5px grey;
+}
+.btn:active{
+    transform: translateY(2px);
+    box-shadow: 0px 0px 2px grey;
+}
+.know{
+    display: none;
+}
+
+
+/* rest of the contents of the web page styling */
+.container{
+    background: rgba(218,218,218,.5);
+    font-family: 'Fira sans', sans-serif;
+    padding: 10px 0px;
+}
+.heading{
+    font-size: 35px;
+    font-family: 'Fira sans', sans-serif;
+    text-align: center;
+    padding: 30px 0px 10px 0px;
+}
+#def{
+    font-family: 'Fira sans', sans-serif;
+    padding: 0px 80px;
+    font-size: 18px;
+    text-align: justify;
+    color: grey;
+}
+#def-img{
+    text-align: center;
+}
+#def-img img{
+    width: 70%;
+    border-radius: 50%;
+}
+.card{
+    background: rgba(218, 218, 218, 1);
+    width: 100%;
+    min-height: 100px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px #414141; 
+    color: black;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+.card span{
+    display: block;
+    font-size: 30px;
+    color: blue;
+}
+.card div{
+    padding: 10px 0px 0px;
+}
+.modal{
+    display: none;
+    padding: 10px;
+    position: fixed;
+    color: black;
+    min-height: 300px;
+    width: 50%;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px #414141;
+    z-index: 1;
+    animation: animfade .5s ease-in-out both;
+}
+@keyframes animfade{
+    0%{
+        transform: translate(-50%,-50%) scale(0);
+    }
+    100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+.close-button{
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px;
+}
+.modal-content{
+    font-family: 'fira sans', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    color: grey;
+}
+.tool-cards{
+    padding: 0px 20px 20px;
+    font-family: 'Fira sans', sans-serif;
+    box-shadow: 4px 4px 20px rgb(218,218,218);
+}
+.tool-des{
+    font-family: 'Fira sans', sans-serif;
+    font-size: 18px;
+    padding: 0px 80px 20px;
+    text-align: justify;
+}
+.padd-80{
+    padding: 0px 80px;
+}
+.tool-header{
+    font-family: 'Fira sans', sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+.tool-image{
+    text-align: center;
+}
+.tool-image img{
+    width: 70%;
+}
+#phone{
+    background: cyan;
+}
+.phone-image{
+    text-align: center;
+}
+.phone-image img{
+    width: 100%;
+}
+@media screen and (min-width:780px){
+    .card:hover{
+        transform: scale(1.02);
+    }
+}
+#social{
+    background: rgb(59, 89, 152);
+}
+.contact-container{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    min-height: 500px;
+    padding: 20px 10px;
+    background: white;
+    transform: translate(-50%,-50%);
+    animation: movein .5s ease-in-out forwards;
+}
+@keyframes movein{
+    0%{
+        transform: translate(-50%,-50%) scale(0);
+    }
+    100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+.contact-content{
+    font-family: dosis;
+}
+.contact-head{
+    font-size: 25px;
+    text-align: center;
+}
+/* styling the conact form */
+.form-section{
+    padding: 0px 40px;
+}
+input[id="name"]{
+    margin-top: 30px;
+}
+input{
+    border: 1px solid grey;
+    padding: 10px 15px;
+    width: 100%;
+    margin: 5px 0px;
+    font-family: dosis;
+    font-size: 16px;
+}
+#footer{
+    font-family: dosis;
+    font-size: 20px;
+    background: lightgrey;
+    color: black;
+}
+.my-social{
+    text-align: center;
+    font-size: 40px;
+}
+footer{
+    padding: 20px;
+}
+footer .fa{
+    margin-right: 10px;
+}
+textarea{
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: dosis;
+}
+#btn{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 15px;
+    border: none;
+    font-family: dosis;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    background: dodgerblue;
+    transition: background .5s linear;
+}
+#bt:focus,#btn:active{
+    outline: none;
+}
+#btn:hover{
+    background: blue;
+}
+.mybutton{
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: transform .1s linear; 
+}
+.mybutton:focus{
+    outline: none;
+}
+.mybutton:active{
+    transform: translateY(1px);
+}
+/* media query for portrait mode and landscape mode and screen having less resolutions */
+@media screen and (max-width: 780px){
+    footer{
+        padding: 0;
+    }
+    .form-section{
+        padding: 0px 25px;
+    }
+    input{
+        margin: 5px 0px;
+    }
+    .contact-container{
+        width: 90%;
+        height: auto;
+    }
+    #extra-content{
+        display: none;
+    }
+    .tool-des{
+        padding: 10px 15px;
+    }
+    .padd-80{
+        padding: 0px 10px;
+    }
+    .modal{
+        width: 90%;
+        min-height: 50%;
+    }
+    .more-info{
+        display: none;
+    }
+    #def{
+        padding: 0px 10px;
+        text-align: justify;
+    }
+    #def-img img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    .know{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        animation: myanim 1s both infinite ease-in-out;
+    }
+    @keyframes myanim{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(3px);
+        }
+    }
+    .btn1{
+        display: none;
+    }
+    .btn2{
+        text-align: center;
+        margin: 15px auto;
+        display: block;
+    }
+    .banner{
+        min-height: 630px;
+    }
+    .ham{
+        display: block;
+    }
+    .main{
+        display: none;
+    }
+    .wrapper{
+        padding: 0px;
+    }
+    .banner-content{
+        padding: 10px 10px;
+    }
+    .banner-content .row{
+        margin: 0;
+    }
+    #hack{
+        font-size: 40px;
+        text-align: center;
+    }
+    .brief{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .hack-image img{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+}
