@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HACKERS: WE ARE ANONYMOUS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.rawgit.com/AnkitAvi1311/website/b5d830a1/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.rawgit.com/AnkitAvi1311/website/b5d830a1/res.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Noto+Serif" rel="stylesheet">
+    <link rel="icon" href="https://github.com/AnkitAvi1311/website/blob/master/logo.png?raw=true">
+</head>
+<body>
+    <!-- Header of the webpage goes here -->
+    <header>
+        <div class="wrapper">
+            <!-- Navigation for mobile phones and tablets -->
+            <div class="ham">
+                <i class="fa fa-bars" aria-hidden="true" id="ham" style="float:left;"></i>
+                <div class="logo2">
+                        <img src="https://github.com/AnkitAvi1311/website/blob/master/logo.png?raw=true" style="float:right;">
+                </div>
+            </div>
+            <!-- Navigation components for the phone navigation bar -->
+            <div class="ham-content" id="ham-content">
+                <div class="profile">
+                    <div class="close">
+                        <i class="fa fa-times" aria-hidden="true"  id="close"></i>
+                    </div>
+                    <div>
+                        <img src="https://github.com/AnkitAvi1311/website/blob/master/Ankit.png?raw=true">
+                    </div>
+                    <div style="padding:0;margin-top:-10px;    overflow: hidden;
+                    white-space: nowrap;">
+                        Ankit Kumar<br/>
+                        <span style="font-size:18px;color:grey;">ankitavi11@outlook.com</span>
+                    </div>
+                    <div class="menu-content">
+                        <ul>
+                            <li><a href="#" class="cl"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                            </li>
+                            <li>
+                                <a href="#prevent" class="cl"><i class="fa fa-shield" aria-hidden="true"></i>Hacking Prevention</a></li>
+                            <li><a href="#tools" class="cl"><i class="fa fa-laptop" aria-hidden="true"></i>Hacking Tools</a></li>
+                            <li id="drop">
+                                <a>Categories</a>
+                            </li>
+                            <div id="cat">
+                                    <div> <a href="#phone" class="cl"><i class="fa fa-mobile" aria-hidden="true"></i>Phone Hacking</a></div>
+                                    <div>
+                                    <a href="#email" class="cl"><i class="fa fa-envelope-o" aria-hidden="true"></i>Email Hacking</a></div>
+                                    <div>
+                                    <a href="#social" class="cl"><i class="fa fa-share-square-o" aria-hidden="true"></i>Social Hacking</a></div>
+                            </div>
+                            <li> 
+                            <a href="#contact-me" class="cl"><i class="fa fa-phone" aria-hidden="true"></i>Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Nagivation bar here -->
+            <nav class="main">
+                <div class="logo">
+                    <img src="https://github.com/AnkitAvi1311/website/blob/master/logo.png?raw=true">
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#prevent">Hacking Prevention</a></li>
+                    <li><a href="#tools">Hacking Tools</a></li>
+                    <li class="drop-down" id="dropdown">
+                        <a href="#">Categories</a>
+                        <div class="down-content">
+                            <a href="#phone"> Phone Hacking</a>
+                            <a href="#email"> Email Hacking</a>
+                            <a href="#social"> Social Hacking</a>
+                        </div>
+                    </li>
+                    <li><a href="#footer" id="cme" onclick="myfunction()">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner of the web page -->
+    <div class="banner" id="banner">
+        <div class="banner-content">
+            <div class="row">
+                <div class="brief brief col-7">
+                    <h1 id="hack">What is Hacking?</h1>
+                        Hacking is identifying weakness in computer systems or networks to exploit its weaknesses to gain access. Example of Hacking: Using password cracking algorithm to gain access to a system.
+                    <div class="btn1">
+                        <a href="#hacking" class="btn">Know more</a>
+                    </div>
+                </div>
+                <div class="hack-image col-5">
+                    <img src="https://github.com/AnkitAvi1311/website/blob/master/hack4.png?raw=true">
+                </div>
+            </div>
+            <!-- For the mobile phones: know more button and animated down menu -->
+            <div class="row">
+                <div class="btn2">
+                    <a href="#hacking" class="btn">know more</a>
+                </div>
+                <div class="know">
+                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Defining Computer Hacking section goes here  -->
+    <div class="container" id="hacking">
+        <div class="row">
+            <div class="heading" class="col-12">
+                Defining Hacking 
+            </div>
+        </div>
+        <div class="row" id="def">
+            <div class="col-7">
+                Computer hacking, on one hand, is the term used to describe the activities practiced by individuals, organizations, and nations, in order to gain unauthorized access to computer and technology dependent systems. These activities may involve the modification or alteration of system's software and hardware to perform activities neither purposed by the creator nor in line with the creator's original intentions.
+                <div class="more-info">
+                    On the other hand, and in a more positive connotation, it refers to the habitual activities of someone who possessing exceptional skills enjoys researching and analyzing the innermost intricacies in the programming world of computer systems. <br/>
+                    Looking at both sides of the definition we can see that the general term is not permanently doomed with a negative connotation. In fact, depending on the nature of the objectives of the hacker a differentiation has been stipulated in the computer world. As such hackers with malicious intent have been defined as crackers. 
+                </div>
+            </div>
+            <div class="col-5" id="def-img">
+                <img src="https://github.com/AnkitAvi1311/website/blob/master/hack1.jpg?raw=true" style="filter: grayscale(1);">
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Hacking prevention section goes here -->
+    <div class="hacking-prevention" id="prevent">
+        <div class="heading row">
+            <div class="col-12">
+                    <i class="fa fa-shield" aria-hidden="true"></i>
+                    Hacking Prevention
+            </div>
+        </div>
+        <div class="row" style="color:white" id="def">
+            <div class="col-5" id="def-img">
+                <img src="https://github.com/AnkitAvi1311/website/blob/master/hack3.png?raw=true" style="border-radius:50%;">
+            </div>
+            <div class="col-7" style="color:white">
+                <div>
+                    The world of technology envelops devices, software programs, and applications and as such various methods and precautions are employed to protect these digital assets from being compromised.
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" id="update">
+                            <div>
+                                <span><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                                <div>
+                                    Update Applications
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="password">
+                            <div>
+                                <span><i class="fa fa-unlock" aria-hidden="true"></i>
+                                </span>
+                                <div>
+                                    Password Security
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="login">
+                            <div>
+                                <span><i class="fa fa-sign-in" aria-hidden="true"></i>
+                                </i></span>
+                                <div>
+                                    Loggin off of Accounts
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal which will contain details of the above cards -->
+        <div class="modal" id="update-content">
+            <div class="" style="text-align:right" >
+                <span class="close-button" id="close-button"><i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="modal-content">
+                <div style="color:blue;margin-bottom:        10px;">
+                    <span><i class="fa fa-wrench" aria-hidden="true"></i></span> Update Applications
+                </div>
+               <div style="text-align: justify;">
+                    Update applications and all devices and ''associated devices'' (your security is as strong as your weakest link) as soon as the updates are available. Updates not only enhance and improve the user's experience with the application, they also constantly improve and rectify security weaknesses and loopholes in the application. If 3 doors of the car are locked but the 4th is not the degree of safety of your car is measured by the open 4th door!
+               </div> 
+            </div>
+        </div>
+
+        <!-- Modal which will contain details of the Password Security -->
+        <div class="modal" id="password-content">
+            <div class="" style="text-align:right" >
+                <span class="close-button"id="close-password"><i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="modal-content">
+                <div style="color:blue;margin-bottom:        10px;">
+                    <span><i class="fa fa-unlock" aria-hidden="true"></i></span> Password Security
+                </div>
+               <div style="text-align: justify;">
+                    Keeping passwords secret is good but ensuring they are not accessed or revealed is better. Most secure platforms today, in addition, demand complex passwords for login (small, caps, numbers and character all-inclusive). Passwords are best neither shared with anyone (not even IT administrators and so-called organizational representatives) nor written down. However, a culture should be developed of changing them often. 
+               </div> 
+            </div>
+        </div>
+
+        <!-- Modal which will contain details of the Logging off accounts details -->
+        <div class="modal" id="login-content">
+                <div class="" style="text-align:right" >
+                    <span class="close-button"id="close-login"><i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="modal-content">
+                    <div style="color:blue;margin-bottom:        10px;">
+                        <span><i class="fa fa-sign-in" aria-hidden="true"></i></span> Logging off of Accounts
+                    </div>
+                   <div style="text-align: justify;">
+                    Securing the access to accounts one logs into on-line entails the conscious practice of logging out or signing out of the session and not just closing the browser. Closing the browser does not end the session or log you out. Re-opening the browser bya nyone else can give full access to your account.
+                   </div> 
+                </div>
+            </div>
+    </div>
+    
+
+    <!-- Rest of the content will start from here -->
+    <!-- Hacking tools section goes here -->
+    <div class="hacking-tool" id="tools">
+        <div class="row">
+            <div class="col-12 heading" style="padding: 30px 0px 10px;color:dodgerblue;"><i class="fa fa-cogs" aria-hidden="true"></i>
+                 Hacking Tools</div>
+        </div>
+        <div class="row" id="tools-content">
+            <div class="tool-des">
+                <div class="col-12">
+                    A hacking tool is a program designed to assist with hacking, or a piece of software which can be used for hacking purposes.<br/>
+                    Examples include Nmap, Nessus, John the Ripper, p0f, and Winzapper. Bribes have also been described as among the most potent hacking tools, due to their potential exploitation in social engineering attacks. Occasionally, common software such as ActiveX is exploited as a hacking tool as well.
+                </div>
+            </div>
+        </div>
+        <!-- making cards to display the different types of hacking tools -->
+        <div class="row padd-80">
+            <div class="col-4">
+                <div class="tool-cards" id="linux">
+                    <div class="tool-header">Linux Vulnerabilities 
+                    </div>
+                    <div class="tool-image">
+                        <img src="https://github.com/AnkitAvi1311/website/blob/master/linux.png?raw=true">
+                    </div>
+                    <div style="text-align: justify;
+                    ">
+                        Although not much is said about threats to the Linux system, they do exist and could increase in the future. One of the biggest threats to the Linux system is given by the so-called Rootkits. These are programs that have special privileges and are able to hide their presence from the system administrator.
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class=" tool-cards" id="worms">
+                    <div class="tool-header">Worms 
+                    </div>
+                    <div class="tool-image">
+                        <img src="https://github.com/AnkitAvi1311/website/blob/master/worm.jpg?raw=true">
+                    </div>
+                    <div style="text-align: justify;
+                    ">
+                    Another example of a hacking tool is a computer worm. These malicious programs detect vulnerabilities in operating systems. Not all worms, however, are malicious. The Nachi Worms have actually fixed operating system vulnerabilities by downloading and installing security patches from the Microsoft website.
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class=" tool-cards" id="firewall">
+                    <div class="tool-header">Port Scanners
+                    </div>
+                    <div class="tool-image">
+                        <img src="https://github.com/AnkitAvi1311/website/blob/master/firewall.jpg?raw=true">
+                    </div>
+                    <div style="text-align: justify;
+                    ">
+                    Port scanners detect vulnerabilities in firewalls, and are able to find a great deal about the computer system, such as the operating system, ISP, wireless routers and how long the system has been online. However, port scanners are also considered the best security auditing tools.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phone Hacking Contents -->
+    <div class="padd-80" id="phone">
+        <div class="heading">
+            <i class="fa fa-mobile" aria-hidden="true"></i> Phone Hacking
+        </div>
+        <div class="row">
+            <div class="col-7" style="font-family:'Fira Sans',sans-serif;text-align:justify;">
+                Phone hacking is the practice of manipulating or gaining unauthorized access to mobile phones, such as by intercepting telephone calls or accessing voicemail messages. When the unauthorized access is to the phone user's conversation, it is more commonly referred to as phone tapping.
+                <br/>
+                <div id="extra-content">
+                    The term came to prominence during the News International phone hacking scandal, in which it was alleged (and in some cases proved in court) that the British tabloid newspaper the News of the World had been involved in the interception of voicemail messages of the British Royal Family, other public figures, and a murdered schoolgirl named Milly Dowler.<br/><br/>
+                    <div>
+                        <h3>Techniques</h3>
+                        <ol>
+                            <li><b>Voicemail Hacking</b>
+                                <div>
+                                    The unauthorised remote access to voicemail systems, such as exposed by the News International phone hacking scandal, is possible because of weaknesses in the implementations of these systems by telcos.
+                                </div>
+                            </li>
+                            <li><b>Handset Hacking</b>
+                                <div>
+                                    An analysis of user-selected PIN codes suggested that ten numbers represent 15% of all iPhone passcodes, with "1234" and "0000" being the most common, with years of birth and graduation also being common choices.[12] Even if a four-digit PIN is randomly selected, the key space is very small ( 10 4 {\displaystyle 10^{4}} 10^{{4}} or 10,000 possibilities), making PINs significantly easier to brute force than most passwords; someone with physical access to a handset secured with a PIN can therefore feasibly determine the PIN in a short time.
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="phone-image">
+                    <img src="https://github.com/AnkitAvi1311/website/blob/master/phone.png?raw=true">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email Hacking -->
+    <div class="padd-80" id="email">
+        <div class="heading">
+            <i class="fa fa-envelope" aria-hidden="true"></i> Email Hacking
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <div class="phone-image">
+                    <img src="https://github.com/AnkitAvi1311/website/blob/master/email.jpg?raw=true">
+                </div>
+            </div>
+            <div class="col-7" style="font-family:'Fira Sans',sans-serif;text-align:justify;">
+                Email is a widely used communication mechanism that can be categorized into two basic types of web-based service: open and closed. Open web-based services provide email accounts to anyone, either for free or for a fee. Closed web-based services are managed by organizations who provide email accounts only to their members.[3] Email is used by commercial and social websites because of its security. Email is an increasingly common tool used to communicate. The main reason email accounts are hacked is to access the personal, sensitive, or confidential information that they might contain. This is very harmful for the user and could cause damage to profiles on certain websites, bank accounts, and personal life.<br/><br/>
+                <div id="extra-content">
+                    <div>
+                        <h3>Attacks</h3>
+                        <ol>
+                            <li>
+                                <b>Spams</b>
+                                <div>
+                                    Spam is created by attackers who send unsolicited commercial or bulk email. Spammers continuously attempt to find new ways around the increased legislation and policies governing unsolicited emails. Attackers often send massive email broadcasts with a hidden or misleading incoming IP address and a hidden or misleading email address.[4] If the spammers were to gain access to a company’s email and IP address, the impact on the company's business could be devastating. The company’s Internet connection would be terminated by its Internet Service Provider (ISP) if its email and IP address are added to the blacklist of known spamming addresses. Effectively, this would shut down the company’s online business because none of the emails would reach their destination.
+                                </div>
+                            </li>
+                            <li>
+                                <b>Virus</b>
+                                <div>
+                                    A virus incorporates email as a means of transportation. This type of virus is often called a worm - the Sobig virus is an example. This virus creates a spamming framework by taking over unwilling participants’ PCs.[4] This is a major threat to email security because the spam will continue to spread, triggering dangerous viruses with malicious intent.
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Social Hacking section goes here -->
+    <div class="padd-80" id="social">
+        <div class="heading" style="color: white;">
+            <i class="fa fa-share-square-o" aria-hidden="true"></i> Social Hacking
+        </div>
+        <div class="row">
+            <div class="col-7" style="color: white;font-family:'Fira Sans',sans-serif;text-align:justify;">
+                Social hacking describes the act of attempting to manipulate outcomes of social behaviour through orchestrated actions. The general function of social hacking is to gain access to restricted information or to a physical space without proper permission. Most often, social hacking attacks are achieved by impersonating an individual or group who is directly or indirectly known to the victims or by representing an individual or group in a position of authority.[1] This is done through pre-meditated research and planning to gain victims’ confidence. Social hackers take great measures to present overtones of familiarity and trustworthiness to elicit confidential or personal information.[2] Social hacking is most commonly associated as a component of “social engineering”.
+            </div>
+            <div class="col-5">
+                <div class="phone-image">
+                    <img src="https://github.com/AnkitAvi1311/website/blob/master/facebook.png?raw=true">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact me Section and my social networking links -->
+    <div class="padd-80"  id="footer">
+        <footer>
+            <div class="row">
+                <div class="col-6">
+                <div id="my-details">
+                    <div style="font-size: 25px;">
+                        Contact--
+                    </div>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    Ankit Kumar <br/>
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    Birla Institute of Technology, Mesra, Ranchi<br/>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    +91-8969774292<br/>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    ankitavi11@outlook.com<br/>OR 
+                    <div>
+                        <button class="mybutton" id="contact-me">Click here to leave me a message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="my-social">
+                    <div style="font-size: 25px;text-align:left;">
+                        Follow me on--
+                    </div>
+                    <span><i class="fa fa-github" aria-hidden="true"></i>
+                    </span>
+                    <span><i class="fa fa-facebook-f" aria-hidden="true"></i>
+                    </span>
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                    </span>
+                    <span><i class="fa fa-dribbble" aria-hidden="true"></i>
+                    </span>
+                    <span><i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div>
+                    &copy copyright 2018 designed and coded by Ankit Kumar
+                </div>
+
+            </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Container modal for the contact section form -->
+    <div class="contact-container" id="contact-container">
+        <div style="text-align:right;">
+            <span id="close-contact" style="font-size: 25px;padding:10px;cursor:pointer;">
+                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="contact-content">
+            <div class="row">
+                <div class="contact-head">
+                    Leave me a message and I will get back to you within 24 hours.
+                </div>
+                <div class="form-section">
+                    <form>
+                        <div>
+                            <input type="text" placeholder="Full Name" name="text" id="name">
+                        </div>
+                        <div>
+                                <input type="text" placeholder="Phone Number" name="text" id="phone-number">
+                            </div>
+                        <div>
+                            <input type="text" id="company" name="company" placeholder="Company" list="c-list">
+                            <datalist id="c-list">
+                                <option value="Student">
+                                <option value="Home">
+                                <option value="Other">
+                            </datalist>
+                        </div>
+                        <div>
+                            <textarea rows=8 placeholder="Leave your message here"></textarea>
+                        </div>
+                        <div>
+                            <button class="submit-button" id="btn">SEND</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.rawgit.com/AnkitAvi1311/website/b5d830a1/main.js"></script>
+</body>
+</html>
